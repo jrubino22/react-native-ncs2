@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {flatlist, View, Text} from 'react-native';
-import {ListItem} from 'react-native-elements';
-import {connect} from 'react-redux';
-import {Loading} from './LoadingComponent';
+import { View, Text } from 'react-native';
+import { ListItem } from 'react-native-elements';
+import { connect } from 'react-redux';
+import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 import { FlatList } from 'react-native-gesture-handler';
 
