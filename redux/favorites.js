@@ -5,11 +5,11 @@ export const favorites = (state = [], action) => {
         case ActionTypes.ADD_FAVORITE:
             if (state.includes(action.payload)) {
                 return state;
+            } else {
+                return state.concat(action.payload);
             }
-            return state.concat(action.payload);
-
         case ActionTypes.DELETE_FAVORITE:
-            return state.filter(favorite = favorite !== action.payload)
+            return state.filter(favorite => favorite !== action.payload)
 
         default:
             return state;
